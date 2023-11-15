@@ -1,0 +1,69 @@
+h1{
+    text-align:center;
+    background-color: orange;
+    line-height: 60px; /* centra el texto */
+  
+}
+
+body {
+    background-color: #ccc8c8; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li {
+    background-color: #fff; 
+    margin-bottom: 10px;
+    padding: 10px; 
+}
+
+ul {
+    list-style-type: none; /* elmina punto por defecto */
+    padding-left: 0;
+}
+
+
+a {
+    color: pink; /* Establece el color rosa para los enlaces no visitados (por defecto) */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+a:visited{
+    color: green;
+    
+}
+
+/* ul:first-child li:nth-of-type(3) { 
+    color: orange;
+} IMPORTANTE DONDE COLOCAR EL OF YA QUE ASI NO FUNCIONA PERO DE LA OTRA FORMA SI*/
+
+ul:first-of-type li:nth-child(3) {
+    color: orange;
+}
+
+
+p::first-line {
+    text-decoration: underline;
+}
+
+ul:nth-of-type(2) li:hover {
+    color: blue; /* Cambia el color del texto a azul al pasar el ratón por encima */
+}
+
+
+ textarea::placeholder {
+    color:green;
+    Font-weight: bold;
+ }
+
+ button:not(:disabled) {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
