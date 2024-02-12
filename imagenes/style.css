@@ -1,0 +1,124 @@
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #050505;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #f5f2f2,
+            0 0 11px #fffefe,
+            0 0 19px #fffbfb,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+.container {
+    margin-top: 20vh;
+}
+
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 70;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('kk.jpg');
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+
+}
+
+header {
+    position: relative;
+    background-color: beige;
+}
+
+.header p a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: 30px;
+    margin: 5px;
+}
+
+img {
+    top: 0;
+    left: 0;
+    width: 460px;
+    height: 410px;
+    border: 1px solid rgba(34, 31, 59, 0.863);
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(34, 31, 59, 0.863);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.licencia {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.licencia p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    background-color: rgb(220, 191, 247);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px 4px 5px;
+    box-shadow: 2px 2px black;
+}
+
+.licencia div {
+    background-color: rgb(237, 227, 247);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px 4px 5px;
+    
+}
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none; /* Evita que el tooltip interfiera con los eventos del mouse */
+}

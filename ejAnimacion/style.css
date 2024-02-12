@@ -1,0 +1,122 @@
+#container,
+#capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    overflow: hidden;
+    /* box-shadow: 100px 0 0 0 white;PARA LA CORTINA DEL CARRUSEL */
+    position: absolute;
+
+}
+
+/*para el degradado*/
+#container {
+    z-index: 2;
+    padding-left: 10%;
+}
+
+/*para el degradado*/
+#capa {
+    border-right: 2px solid grey;
+    animation: lineal 5s linear infinite;
+    z-index: 1;
+    width: 50%;
+    height: 20%;
+
+}
+
+img {
+    width: 60%;
+    height: 70%;
+    margin: 0 10px;
+    /* animation: rotateAnimation 2s linear infinite;  TEMBLOR*/
+    /* animation: slideAnimation 4s linear infinite; CARRUSEL*/
+    opacity: 0.5;
+    /*para el degradado*/
+}
+
+/*para el degradado*/
+image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    /* Ancho borde izquierdo*/
+    background: white;
+    transform: scaleX(0);
+    /* Escala inicialmente a cero */
+    transform-origin: right;
+    /*punto de origen para la transformación */
+    transition: transform 4s ease-out;
+    /* duración de la transición*/
+}
+
+/*para el degradado*/
+img:nth-child(1) {
+    animation: fadeInOpacity 5s 0s linear infinite;
+}
+
+img:nth-child(2) {
+    animation: fadeInOpacity 5s 4s linear infinite;
+}
+
+img:nth-child(3) {
+    animation: fadeInOpacity 5s 8s linear infinite;
+}
+
+img:nth-child(4) {
+    animation: fadeInOpacity 5s 12s linear infinite;
+}
+
+/*para el degradado */
+@keyframes lineal {
+    0% {
+        transform: translateX(-550px);
+    }
+
+    100% {
+        transform: translateX(550px);
+
+    }
+
+}
+
+/*para el degradado*/
+@keyframes fadeInOpacity {
+    to {
+        opacity: 1;
+        /* Opacidad completa */
+    }
+}
+
+
+
+/*  ROTACION
+ @keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10%,30%{
+        transform: rotate(5deg);
+    }
+    50%,60%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+} */
+/* CORTNA
+ @keyframes slideAnimation {
+    0%{
+        transform: translateX(-550px);
+    }
+    100%{
+        transform: translateX(550px);
+       
+    }
+
+} */

@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(194, 237, 197);
+}
+nav.menu {
+    background: linear-gradient(45deg, orange, yellow, green); /*degradado lineal diagonal*/
+    max-width: 20%; /* ajustar tamaño nav*/
+  
+}
+nav.menu a {
+    text-decoration: none; /* quitar subrayado*/
+    color: white;
+    padding: 10px 10px; /* un pequeño espacio entre los elemntos dle nav*/
+ 
+}
+header {
+    background: radial-gradient(circle at center, #514ef8,  #f8cfde); /* dehradado central*/
+    color: rgb(103, 101, 101); 
+}
+section {
+    background: linear-gradient(to right, red, yellow, green); /* degradado verticañ*/ 
+    padding: 60px; /* añade espacio alrededor del contenido */
+    border-radius: 80px; /* bordes redondeados */
+    margin: 0 auto; /* centra el section en la pantalla */
+    max-width: 400px; /* limita el ancho del section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra para resaltar el section   NO ES NECESARIO  */
+}
+
+  /* bordes a los elementos p y ul */
+    section p, section ul {
+        border: 2px solid black; /* borde negro */
+        padding: 10px; /* añade espacio alrededor del contenido */
+       
+    }
+    section ul {
+        list-style: none; /* elimina los puntos de la lista */
+    }
+/*bordes de color verde*/
+    section ul li {
+        border: 2px solid green; 
+        padding: 5px; /* espacio alrededor del contenido */
+        display: inline-block; /* elementos li uno al lado del otro */
+      
+    }
+     
+     span.block {
+        display: block; /* span ocupe toda la anchura disponible */
+        border: 2px solid green; /* Borde verde */
+        padding: 5px; /*espacio alrededor del texto dentro del span */
+      
+    }
+
+    footer{
+       border: 2px solid black; /* borde negro*/
+       background-color: rgb(216, 215, 215);
+       padding: 10px; /*espacio alrecedor text0*/
+       margin: 20px; /*espacio por fuera*/
+    }
+      footer p {
+        margin: 0; /* elimina el margen interior del párrafo para si centrar el texto */    
+    }
+
+    /* cambios al pasar el ratón por encima */
+nav.menu a:hover {
+    color: gray; /*cambia color a gris */
+    font-size: 1.1em;
+}
+
+header:hover {
+    font-size: 2em; /*texto doble de grande */
+}
+  

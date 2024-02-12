@@ -1,0 +1,102 @@
+p {
+    font-size: x-small;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    /* Muestra los elementos en línea (horizontalmente) */
+    margin-right: 20px;
+    /* Espacio entre elementos del menú */
+}
+
+
+/* Estilos base de la tarjeta con Flexbox */
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.card img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.card-info {
+    flex: 1;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Crea 3 columnas de igual tamaño */
+    grid-template-rows: repeat(3, 100px);
+    /* Crea 3 filas de altura fija de 100px */
+    gap: 10px;
+    /* Espacio entre las celdas */
+
+}
+
+.item {
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: x-large;
+    }
+
+    body {
+        background-color: aqua;
+    }
+    nav li {
+        display: flex;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Crea 3 columnas de igual tamaño */
+        grid-template-rows: repeat(2, 100px);
+        /* Crea 3 filas de altura fija de 100px */
+        gap: 10px;
+        /* Espacio entre las celdas */
+
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        display: inline;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* Crea 3 columnas de igual tamaño */
+        grid-template-rows: repeat(1, 100px);
+        /* Crea 3 filas de altura fija de 100px */
+        gap: 10px;
+        /* Espacio entre las celdas */
+    
+    }
+}
+
+

@@ -1,0 +1,57 @@
+/* para que el texto quede en el centro centro con los 4 ultimos*/
+header {
+    color: white;
+    background-color: rgb(56, 142, 246);
+    height: 20vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* añadir estilo a lis div */
+div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(204, 203, 203);
+}
+
+/* sino pongo of-type no funciona:) y asi me coge el primer elemento section del documento */
+section:first-of-type {
+    display: flex;
+    /*  pongo que el espacio sea flexible */
+    justify-content: center;
+    /* centra los elementos horizontalmente dentro del contenedor flexible  */
+    margin-top: 70px;
+    /* margen superior al section */
+    gap: 80px;
+    /*espacio entre los elementos dentro del contenedor  */
+    flex-wrap: wrap;
+    /* elementos pasan ala siguiente linea si no caben */
+}
+
+/*segundo section con letras */
+section:nth-child(2) {
+    display: grid;
+    /*elementos se colocan en una cuadrícula. */
+    justify-content: center;
+    /*  Centra los elementos horizontalmente */
+    margin: 100px 600px 60px 600px;
+    /*  Establece márgenes superior, derecho, inferior e izquierdo respectivamente. */
+    gap: 30px;
+    /* Establece un espacio de 30 píxeles entre las celdas de la cuadrícula. */
+    grid-template-columns:  repeat(3, 1fr);
+        /* rea tres columnas de igual ancho en la cuadrícula. */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
