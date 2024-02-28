@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <title>Imagenes</title>
     <style>
 
-</style>
+    </style>
 </head>
+
 <body>
     <header style="text-align: center;" class="header">
-        <img src="oo.jpg" alt="foto persona" style="width: 180px; height: 180px; border: 0px; display: block; margin: 0 auto;">
+        <img src="oo.jpg" alt="foto persona"
+            style="width: 180px; height: 180px; border: 0px; display: block; margin: 0 auto;">
         <div style="display: flex; justify-content: center;">
             <p style="margin-right: 20px;"><a href="index.html">Fotos</a></p>
             <p style="margin-right: 20px;"><a href="audio.html">Audio</a></p>
@@ -21,52 +24,50 @@
 
     <div class="container">
         <h1 class="neonText">
-         AUDIOS
+            VIDEOS
         </h1>
-     </div>
+    </div>
     <div class="licencia">
         <div>
-            <audio controls="controls" autoplay loop preload="auto">
-                <source src="audio/barkito.mp3" type="audio/mpeg">
-                <source src="audio/barkitoOgg.ogg" type="audio/ogg">
-                Tu navegador no soporta el elemento de audio.
-            </audio>
-        <p>MÚSICA DE FONDO</p>
-    </div>
-    <div>
-        <audio controls="controls" id="podcast" preload="none">
-            <source src="audio/dolerme.mp3" type="audio/mpeg">
-            <source src="audio/dolermeOgg.ogg" type="audio/ogg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-    
-        <p>PODCAST</p>
-    </div>
-    <div>
-        <audio id="cancion" preload="none">
-            <source src="audio/fondo.mp3" type="audio/mpeg">
-            <source src="audio/fondoOgg.ogg" type="audio/ogg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-        <div id="audio-controls">
-            <button onclick="togglePlay()">Play/Pause</button>
-            <label for="velocidad">Velocidad:</label>
-            <select id="velocidad" onchange="velocidad()">
-                <option value="1">Normal</option>
-                <option value="2">Doble</option>
-            </select>
+            <video controls poster="video/posterCerveza.jpg">
+                <source src="video/escritura.mp4#t=104" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <p>VIDEO CON POSTER</p>
         </div>
-    
-        <p>CANCIÓN </p>
-        
-    </div>
-   
-    </div>
-    
+        <div style="width: 300px;">
+            <video autoplay style="max-width: 100%;">
+                <source src="video/multitarea.mp4#t=10" type="video/mp4" >
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <p>VIDEO SIN CONTROLES Y AUTOPLAY</p>
+        </div>
+        <div style="width: 300px;">
+            <video controls style="max-width: 100%;">
+                <source src="video/morir.mp4#t=30" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <p>VIDEO CON CONTROLES Y SIN AUTOPLAY </p>
+        </div>
+
+        <div>
+            <iframe 
+            src="https://www.youtube.com/embed/e6EFZiVOjxQ" 
+            frameborder="1"
+            style="max-width: 100%;"
+            allowfullscreen
+            sandbox="allow-same-origin allow-scripts">
+        </iframe>
+            <p>VIDEO EN IFRAME </p>
+        </div>
+
+    </div> 
+
     <footer>
         <p>Monica Seys Oltra</p>
     </footer>
     <script src="formulario.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
